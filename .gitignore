@@ -1,30 +1,20 @@
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+### 빌드 결과물 ###
+/build/
+/out/
+.gradle/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
+### IDE 설정 파일 ###
+.idea/
 *.iws
 *.iml
 *.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+.classpath
+.project
+.settings/
+.sts4-cache
+.apt_generated
+.factorypath
+.springBeans
 
 ### NetBeans ###
 /nbproject/private/
@@ -36,42 +26,21 @@ out/
 ### VS Code ###
 .vscode/
 
-# Gradle 빌드 결과물
-/build/
-/out/
-
-# IntelliJ IDEA, Eclipse 등 IDE 설정 파일
-/.idea/
-/*.iml
-/.classpath
-/.project
-/.settings/
-
-# Gradle Wrapper 파일 (일반적으로 올려도 되지만 취향에 따라 제외)
-/gradle/wrapper/gradle-wrapper.jar
-
-# OS별 불필요 파일
+### OS 불필요 파일 ###
 .DS_Store
 Thumbs.db
 
-# 로그 파일
+### 로그 파일 ###
 *.log
 
-# 환경설정 파일 (API 키, 비밀번호 등 민감정보 포함 가능성 있는 파일)
+### 민감정보 파일 ###
 /src/main/resources/firebase/firebase-service-key.json
-
-# 빌드 폴더 안에 있는 *.class 파일들
-**/*.class
-
-# 임시 파일
-*.tmp
-*.temp
-
-# Gradle 캐시, 데몬, 빌드 스크립트 관련 파일
-.gradle/
-
-# dotenv 환경변수 파일
 .env
 .env.*
 
+### 임시 파일 ###
+*.tmp
+*.temp
 
+### 클래스 파일 ###
+**/*.class
